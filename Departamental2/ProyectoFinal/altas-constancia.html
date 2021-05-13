@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    
+    <head>
+        <title>Constancias</title>
+        <!--Lenguaje ESPAÑOL con caracteres especiales-->
+        <meta charset="utf-8">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="assets/styles.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Electivas</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Wendy Carrillo <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Perfil</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="login.html">Cerrar Sesión</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse--> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+                        <li>
+                            <a href="dashboard.html"><i class="icon-chevron-right"></i> Inicio</a>
+                        </li>
+                        <li>
+                            <a href="desglose-creditos.html"><i class="icon-chevron-right"></i> Desglose de créditos</a>
+                        </li>
+                        <li class="active">
+                            <a href="altas-constancia.html"><i class="icon-chevron-right"></i> Alta de constancia</a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="icon-chevron-right"></i> Salir</a>
+                        </li>
+                    </div>
+
+                    <!-- TABLAS DE CONTENIDO ..................................................... -->
+                    <!-- PRIMER TABLA DE CONTENIDO ............................................... -->
+                   <!-- </div> _______________________ A Q U I  -->
+
+                   <div class="span9" id="content"> <!-- A Q U I -->
+
+                    <h2>Constancias</h2>
+
+                        <div class="row-fluid">
+                        <!-- block -->
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left">
+                                    <h3>Alta de constancias</h3>
+                                </div>
+                                <!-- Botón para NUEVA CONSTANCIA -->
+                                    <div class="pull-right"> <!-- Alineo a la derecha -->
+                                        <div class="block-content collapse in">
+                                            <div class="span12">
+                                                
+                                                <a href="#myAlert" data-toggle="modal" class="btn btn-danger">Nueva Constancia</a>
+
+
+                                                <!-- CONTENIDO DEL MODAL "Nueva Constancia" -->
+                                                <div id="myAlert" class="modal hide">
+                                                    <div class="modal-header">
+                                                        <button data-dismiss="modal" class="close" type="button">×</button>
+                                                        <h3>Subir Constancia</h3>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- CONTENIDO FORMULARIO -->
+
+                                                        <!-- validation -->
+                                                        <div class="row-fluid">
+                                                             <!-- block -->
+                                                            <!--<div class="block">
+                                                                <div class="block-content collapse in">-->
+                                                                    <!--<div class="span20">-->
+
+                                                                        <!-- BEGIN FORM
+                                                                        <form action="#" id="form_sample_1" class="form-horizontal">-->
+                                                                        <form action="#">
+                                                                            <fieldset>
+                                                                                <div class="alert alert-error hide">
+                                                                                    <button class="close" data-dismiss="alert"></button>
+                                                                                    Tienes errores o no has completado campos requeridos. Por favor revisa nuevamente.
+                                                                                </div>
+                                                                                <div class="alert alert-success hide">
+                                                                                    <button class="close" data-dismiss="alert"></button>
+                                                                                    Registro Exitoso!
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                    <label class="control-label">Nombre de la actividad<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input type="text" name="name" data-required="1" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="control-group">
+
+                                                                                    <label class="control-label">Fecha de inicio<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+
+                                                                                    <label class="control-label">Fecha de termino<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--
+                                                                                <div class="control-group">
+                                                                                    <label class="control-label">Fecha de inicio<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                    <label class="control-label">Fecha de termino<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                -->
+                                                                                 <div class="control-group">
+                                                                                    <label class="control-label">Horas<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="time" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--<div class="control-group">
+                                                                                    <label class="control-label">URL<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="url" type="text" class="span6 m-wrap"/>
+                                                                                        <span class="help-block">e.g: http://www.demo.com or http://demo.com</span>
+                                                                                    </div>
+                                                                                </div>-->
+                                                                                <div class="control-group">
+                                                                                  <label class="control-label" for="fileInput">Archivo (solo una constancia y en .pdf)</label>
+                                                                                  <div class="controls">
+                                                                                    <div class="uploader" id="uniform-fileInput"><input class="input-file uniform_on" id="fileInput" type="file"><span class="filename" style="user-select: none;">s</span><span class="action" style="user-select: none;"></span></div>
+                                                                                  </div>
+                                                                                </div>
+
+
+                                                                                 <div class="control-group">
+                                                                                    <label class="control-label">Observaciones<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <!--<input type="text" size="15" maxlength="30" name="name" data-required="1" class="span6 m-wrap"/>-->
+                                                                                        <textarea rows="5" cols="100" align="center"> Ingrese las observaciones que considere necesarias </textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </fieldset>
+                                                                        </form>
+                                                                        <!-- END FORM-->
+                                                                    <!--</div>-->
+                                                                <!--</div>
+                                                            </div>-->
+                                                            <!-- /block -->
+                                                        </div>
+                                                        <!-- /validation -->
+
+                                                        <!-- -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a data-dismiss="modal" class="btn btn-primary" href="AltaConstancia.php">Guardar</a>
+
+                                                        <a data-dismiss="modal" class="btn" href="#">
+                                                        <button type="reset" >Cancelar</button> 
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- FIN CONTENIDO DEL MODAL -->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- FIN DE BOTÔN NUEVA CONSTANCIA -->
+
+                            </div>
+
+                        <!--------------------------------------------------------------------------------------------------------------->
+                            <div class="block-content collapse in">
+                                <div class="span12">
+                                    
+                                    <div id="example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                                        
+                                        <div class="row">
+
+                                            <!-- SELEECIONAR NUMERO DE REGISTROS -->
+                                            <div class="span6">
+                                                <div id="example_length" class="dataTables_length">
+                                                    <label>
+                                                        <select size="1" name="example_length" aria-controls="example">
+                                                            <option value="10" selected="selected">10</option>
+                                                            <option value="25">25</option>
+                                                            <option value="50">50</option><option value="100">100</option>
+                                                        </select> 
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- BUSCAR REGISTRO -->
+                                            <div class="span6">
+                                                <div class="dataTables_filter" id="example_filter">
+                                                        <input type="text" aria-controls="example">
+                                                        <button class="btn"><i class=" icon-search icon-white"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered dataTable" id="example" aria-describedby="example_info">
+                                        <thead>
+                                            <!-- ENCABEZADOS DE LA TABLA -->
+                                            <tr role="row">
+                                                <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 153px;">Nombre de la Actividad
+
+                                                </th>
+                                                <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 224px;">Fecha
+                                                </th>
+                                                <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 208px;">Horas
+                                                </th>
+                                                <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 131px;">Acciones
+
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        
+                                    <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                         <!-- CONTENIDO DE LA TABLA -->
+                                        <tr class="gradeA odd">
+                                                <td class="  sorting_1">Curso de Android</td>
+                                                <td class=" ">23-12-2020</td>
+                                                <td class=" "> 20</td>
+                                                <td class="center ">
+                                                    <button class="btn btn-primary"><i class="icon-pencil icon-white"></i></button>
+
+                                                    <a href="#Eliminar" data-toggle="modal" class="btn btn-danger"><i class="icon-trash icon-white"></i></a>
+
+
+                                                    <!-- VENTANA EMERGENTE PARA CONFIRMAR LA ELIMINACIÓN -->
+                                                    <!--
+                                                            <div id="Eliminar" class="modal hide in" aria-hidden="false" style="display: block;">
+                                                                <div class="modal-header">
+                                                                    <button data-dismiss="modal" class="close" type="button">×</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>¿Está seguro que desea eliminar este curso?</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <a data-dismiss="modal" class="btn btn-primary" href="#">Confirmar</a>
+                                                                    <a data-dismiss="modal" class="btn" href="#">Cancelar</a>
+                                                                </div>
+                                                            </div>
+                                                    -->
+                                                    <!-- FIN DE LA VENTANA EMERGENTE -->
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA even">
+                                                <td class="  sorting_1">Curso de React</td>
+                                                <td class=" ">30-04-2021</td>
+                                                <td class=" ">20</td>
+                                                <td class="center ">
+                                                    <button class="btn btn-primary"><i class="icon-pencil icon-white"></i></button>
+
+                                                    <a href="#Eliminar" data-toggle="modal" class="btn btn-danger"><i class="icon-trash icon-white"></i></a>
+
+
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class="  sorting_1">Curso de Flutter</td>
+                                                <td class=" ">16-09-2020</td>
+                                                <td class=" ">30</td>
+                                                <td class="center ">
+                                                    <!-- VALIDADO ------------------------------------------------------------------- -->
+                                                    <span class="label label-success">Validada</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Curso de Read Native</td>
+                                                <td>16-09-2020</td>
+                                                <td>30</td>
+                                                <td>
+                                                     <!-- RECHAZADO ------------------------------------------------------------------- -->
+                                                    <a href="#myModal" data-toggle="modal" class="label label-important">Rechazada</a>
+                                                    <div id="myModal" class="modal hide">
+                                                        <div class="modal-header">
+                                                            <button data-dismiss="modal" class="close" type="button">×</button>
+                                                            <h3>Rechazada</h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>La constancia no especifica horas.</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="row" >
+                                        <div class="span12">
+                                            <div class="dataTables_paginate paging_bootstrap pagination">
+                                                <ul>
+                                                    <li class="prev disabled"><a href="#">← Atrás</a></li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li><li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li><li><a href="#">5</a></li>
+                                                    <li class="next"><a href="#">Siguiente → </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                        <!-- /block -->
+                    </div>
+                        <!-- FIN SEGUNDA TABLA DE CONTENIOD -->
+                       
+                    </div>
+
+                   
+            </div>
+            <hr>
+           <!-- PIE DE PÁGINA-->
+           <!--
+           <footer>
+                <p>&copy; Vincent Gabriel 2013</p>
+            </footer> 
+            -->
+        </div>
+        <!--/.fluid-container-->
+
+        <!-- BOTON DE ALERTA PARA EL CUADRO DE DIALOGO EMERGENTE -->
+        <script src="vendors/jquery-1.9.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jGrowl/jquery.jgrowl.js"></script>
+        <script src="assets/scripts.js"></script>
+
+        <script src="vendors/jquery-1.9.1.min.js"></script>
+        
+        <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        
+        <script>
+        $(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        </script>
+        <script>
+        $(function() {
+            $('.tooltip').tooltip();    
+            $('.tooltip-left').tooltip({ placement: 'left' });  
+            $('.tooltip-right').tooltip({ placement: 'right' });    
+            $('.tooltip-top').tooltip({ placement: 'top' });    
+            $('.tooltip-bottom').tooltip({ placement: 'bottom' });
+
+            $('.popover-left').popover({placement: 'left', trigger: 'hover'});
+            $('.popover-right').popover({placement: 'right', trigger: 'hover'});
+            $('.popover-top').popover({placement: 'top', trigger: 'hover'});
+            $('.popover-bottom').popover({placement: 'bottom', trigger: 'hover'});
+
+            $('.notification').click(function() {
+                var $id = $(this).attr('id');
+                switch($id) {
+                    case 'notification-sticky':
+                        $.jGrowl("Stick this!", { sticky: true });
+                    break;
+
+                    case 'notification-header':
+                        $.jGrowl("A message with a header", { header: 'Important' });
+                    break;
+
+                    default:
+                        $.jGrowl("Hello world!");
+                    break;
+                }
+            });
+        });
+        </script>
+    </body>
+
+</html>
