@@ -56,7 +56,7 @@ function Createphp($conexion){
 	else
 	{
 		$respuesta['estado'] = 0;
-		$respuesta['mensaje'] = "Ocurrio un error desconocido";
+		$respuesta['mensaje'] = "Ocurrio un error";
 		$respuesta['id'] = -1;
 		echo json_encode($respuesta);
 	}
