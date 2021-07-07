@@ -49,7 +49,7 @@ function Createphp($conexion){
 	if($resultado>=1)
 	{
 		$respuesta['estado'] = 1;
-		$respuesta['mensaje'] = "El registro se creo con Exito";
+		$respuesta['mensaje'] = "Registro correcto";
 		$respuesta['id'] = mysqli_insert_id($conexion);
 		echo json_encode($respuesta);
 	}
@@ -93,7 +93,7 @@ function Updatephp($conexion){
 
 	if(mysqli_affected_rows($conexion)>0){
 		$Respuesta['estado'] = 1;
-		$Respuesta['mensaje'] = "Actualizacion completa";
+		$Respuesta['mensaje'] = "Actualizo correctamente";
 	}else{
 		$Respuesta['estado'] = 0;
 		$Respuesta['mensaje'] = "Ocurrrio un error";
